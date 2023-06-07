@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    font-family: "굴림";
+}
+
+#wrap{
+    width: 100%;
+    height: 700px;
+}
+
+/* TOP */
+
+.top{
+    width: 100%;
+    height: 600px;
+    /* background-color: #eee; */
+}
+
+/* HEADER */
+
+.header{
+    width: 200px;
+    height: 600px;
+    float: left;
+    /* background-color: #bbb; */
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.main{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main > li > a{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #eee;
+}
+
+.main > li:hover > a{
+    background-color: #ddd;
+}
+
+.sub{
+    display: none;
+}
+
+.sub li a{
+    display: block;
+    margin-left: 10px;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #eee;
+}
+
+.sub li a:hover{
+    background-color: #ddd;
+}
+
+
+/* CONTENTS */
+
+.contents{
+    width: 400px;
+    height: 600px;
+    float: left;
+    /* background-color: #fff; */
+}
+
+/* NOTICE */
+
+.notice{
+    height: 250px;
+    padding: 20px;
+    /* background-color: #999; */
+}
+
+.notice h2{
+    font-size: 15px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+}
+
+.notice ul{
+    height: 175px;
+    /* background-color: #f1f1f1; */
+    border-top: 5px solid green;
+    padding: 5px;
+}
+
+.notice ul li{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dotted #ddd;
+}
+
+.notice ul li a{
+    display: block;
+    width: 70%;
+    float: left;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice ul li span{
+    float: right;
+}
+
+/* GALLERY */
+
+.gallery{
+    height: 25px;
+    padding: 20px;
+    /* background-color: #999; */
+}
+
+.gallery h2{
+    font-size: 15px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+}
+
+.gallery ul{
+    height: 175px;
+    background-color: #f1f1f1;
+    border-top: 5px solid red;
+    padding: 5px;
+}
+
+.gallery ul li{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.gallery ul li a{}
+.gallery ul li a img{width: 90%;}
+.gallery ul li a span{
+    display: inline-block;
+    padding: 10px 0;
+}
+
+/* LINK */
+
+.link{
+    height: 100px;
+    padding: 10px 20px;
+    /* background-color: #ddd; */
+}
+
+.link_list{}
+.link_list li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.link_list li a{}
+.link_list li a img{}
+.link_list li a span{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* IMG_SLIDE */
+
+.img_slide{
+    width: calc(100% - 600px);
+    height: 600px;
+    float: left;
+    /* background-color: #eee; */
+    position: relative;
+    overflow: hidden;
+}
+
+.top_move{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1800px;
+}
+
+.top_move li{
+    width: 100%;
+    height: 600px;
+}
+
+.top_move li a img{
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #aaa;
+    border-bottom: 1px solid black;
+}
+
+/* F_LOGO */
+
+.f_logo{
+    width: 200px;
+    height: 100px;
+    float: left;
+    /* background-color: #aaa; */
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* COPY */
+
+.copy{
+    width: calc(100% - 400px);
+    height: 100px;
+    float: left;
+    /* background-color: #888; */
+    line-height: 100px;
+    text-indent: 20px;
+}
+
+/* FAMILY */
+
+.family{
+    width: 200px;
+    height: 100px;
+    float: left;
+    /* background-color: #999; */
+    padding-top: 25px;
+    text-align: center;
+}
+
+.family select{
+    width: 180px;
+    height: 50px;
+}
+
+/* POP */
+
+.pop_bg{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.popup{
+    display: none;
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    border: 10px double black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 120;
+    padding: 20px;
+    text-align: center;
+}
+
+.popup h3{
+    font-size: 25px;
+    padding: 30px 0;
+    border-bottom: 2px dotted black;
+}
+
+.popup p{
+    padding-top: 30px;
+    line-height: 2;
+}
+
+.close{
+    position: absolute;
+    padding: 5px 10px;
+    right: 30px;
+    bottom: 20px;
+}
